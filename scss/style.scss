@@ -1,0 +1,72 @@
+body {
+  position: absolute;
+  margin: 0;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  position: relative;
+  display: flex;
+  background-color: black;
+  width: auto;
+  height: auto;
+  justify-content: space-around;
+
+  input {
+    width: 150px;
+    height: 3%;
+    margin: 2px;
+    padding: 3px;
+    border: none;
+    border-radius: 3px;
+  }
+}
+
+.section {
+  position: relative;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
+.article {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: auto;
+  height: auto;
+  background-color: blueviolet;
+  color: chartreuse;
+}
+
+.todolist {
+  padding: 10px;
+  margin: 2px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  .checked {
+    width: auto;
+    height: auto;
+    margin: 5px;
+    position: absolute;
+    left: 0;
+    text-decoration: line-through;
+  }
+
+  .takeoff {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 0;
+    margin: 5px;
+  }
+}
