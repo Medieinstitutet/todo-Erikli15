@@ -1,21 +1,31 @@
-import { todoList } from "./creathtml";
+import { todoList, createHtml } from "./creathtml";
 
-export function addTask() {
-  const input = document.getElementById("userinput").value;
+export function addTask(e) {
+  e.preventDefault();
 
-  todoList.push(input);
+  const textValue = document.getElementById("todo").value;
 
-  document.getElementById("userinputs").value = "";
+  todoList.push(textValue);
+
+  document.getElementById("todo").value = "";
+  console.log(textValue);
+  createHtml();
 }
 
 export function checked() {}
 
-export function delit() {}
+export function delit(e) {
+  e.preventDefault();
+
+  todoList.pop();
+
+  createHtml();
+}
 
 export function sortItems(e) {
   e.preventDefault();
 
-  todoList.sort((items1, items2) => {
-    return items1 - items2;
-  });
+  todoList.sort();
+
+  createHtml();
 }
