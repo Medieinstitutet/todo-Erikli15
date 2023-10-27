@@ -1,36 +1,57 @@
 body {
-  position: absolute;
   margin: 0;
-  min-width: 300px;
-  display: flex;
-  flex-direction: column;
 }
 
-form {
-  position: relative;
+h1 {
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: auto;
+  text-align: center;
+  color: chartreuse;
+  background-color: darkblue;
+}
+
+.input {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 500px;
+  height: auto;
   background-color: black;
+  text-decoration: none;
+}
+
+#todo {
+  border-radius: 3px;
+}
+
+#addToList {
+  border-radius: 3px;
   width: auto;
   height: auto;
-  justify-content: space-around;
-
-  input {
-    width: 150px;
-    height: 3%;
-    margin: 2px;
-    padding: 3px;
-    border: none;
-    border-radius: 3px;
-  }
 }
 
+#sort {
+  border-radius: 3px;
+  height: auto;
+  width: auto;
+}
+
+.selected {
+  text-decoration: line-through;
+}
+
+div {
+  display: flex;
+}
 .section {
   position: relative;
-  width: 100%;
+  width: 500px;
   height: auto;
   justify-content: center;
   align-items: center;
-  margin: 5px;
+  padding-top: 5px;
 }
 
 .article {
@@ -46,7 +67,6 @@ form {
 
 .todolist {
   padding: 10px;
-  margin: 2px;
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -59,7 +79,6 @@ form {
     margin: 5px;
     position: absolute;
     left: 0;
-    text-decoration: line-through;
   }
 
   .takeoff {
@@ -68,5 +87,8 @@ form {
     position: absolute;
     right: 0;
     margin: 5px;
+    background-color: blueviolet;
+
+    border: none;
   }
 }
